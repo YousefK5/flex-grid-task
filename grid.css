@@ -1,0 +1,58 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(20,auto);
+    grid-template-rows: repeat(12, auto);
+    column-gap: 5px;
+    row-gap: 10px;
+    height: 650px;
+}
+
+.container div {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+.head {
+    grid-column: 1/21;
+    grid-row: 1/2;
+    background-color: rgb(127, 189, 255);
+}
+
+.hero {
+    background-color: rgb(191, 204, 217);
+    grid-column: 1/8;
+    grid-row: 2/5;
+}
+
+.side {
+    background-color: rgb(90, 172, 120);
+    grid-column: 1/8;
+    grid-row: 5/10;
+}
+
+.main {
+    background-color: rgb(211, 221, 32);
+    grid-column: 8/21;
+    grid-row: 2/7;
+}
+
+.extra {
+    background-color: rgb(126, 132, 137);
+    grid-area: 7/8/10/21;
+}
+
+.imgs {
+    background-color: rgb(126, 236, 179);
+    grid-area: 10/1/12/16;
+}
+
+.posts {
+    background-color: rgb(250, 146, 227);
+    grid-area: 10/16/12/21;
+}
+
+.foot {
+    background-color: rgb(233, 191, 53);
+    grid-area: 12/1/13/21;
+}
